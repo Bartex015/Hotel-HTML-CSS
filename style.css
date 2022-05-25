@@ -1,0 +1,274 @@
+@font-face {
+    src: url(SFKingstonRegular.otf);
+    font-family: kingston;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* NAVBAR */
+
+header #logo, header li, header a, header button {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 5px 10px 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color:rgba(44, 42, 42, 0.412);
+    position: fixed;
+    width: 100%;
+    z-index: 80;
+    transition: 1s;
+}
+
+header:hover{
+    background-color:rgba(0, 0, 0, 0.834);
+    transform: scale(1.25);
+    z-index: 79;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.nav__links li:hover{
+
+    background-color:rgba(84, 88, 84, 0.288);
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.nav__links a:active{
+
+    color: rgba(7, 225, 233, 0.863);
+    
+}
+
+.nav__links li{
+    display: inline-block;
+
+}
+
+
+/* #menu{
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    background-color:rgba(44, 42, 42, 0.412);
+    position: fixed;
+    transition: 0.5s;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+#logo{
+
+    min-width: 50px;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+#menu:hover{
+    background-color:rgba(0, 0, 0, 0.834);
+    transform: scale(1.25);
+    z-index: 79;
+}
+
+#tabs{
+
+}
+.tab{
+    min-width: 50px;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.tab:hover{
+    background-color:rgba(84, 88, 84, 0.288);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s
+}
+
+a:link .tab, a:visited .tab{
+
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+a:active .tab{
+    color: aqua;
+    font-size: xx-large;
+    transition: 0.1s;
+}
+
+
+#checkterm{
+    min-width: 50px;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.9;
+    margin-right: auto;
+
+
+} */
+
+ /* FIRST SECTION */
+ 
+#homeSection{
+    background-image: url(firstphoto.jpg);
+    width: 100%;
+    height: 100%;   
+    background-size: 100% 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midcontainer
+{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ #title{
+    font-size: 10vh;
+    color: #ffffff;
+    font-family: kingston;
+} 
+
+
+#startbutton{
+    display: flex;
+    justify-content: center;
+
+}
+
+#startarrow{
+    color: #ffffff;
+    margin-top: 200px;
+    animation: up-and-down 1s ease-in infinite alternate;
+}
+
+@keyframes up-and-down{
+
+    100%{
+        transform: translateY(50%);
+    }
+    
+}
+
+#startarrow:hover{   
+
+    cursor: pointer;    
+}
+
+ /* SECOND SECTION */
+
+ #occasionsSection{
+    background-image: url(zdj3.jpg);
+    width: 100%;
+    height: 100%;   
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstOccasion{
+    background-image: url(occasion1.jpg);
+
+}
+
+.secondOccasion{
+    background-image: url(occasion2.jpg); 
+
+}
+
+.thirdOccasion{
+    background-image: url(occasion3.jpg);
+
+}
+.occasions{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+
+}
+
+.occasions:hover{
+    transform: scale(1.25);
+    z-index: 1; 
+}
+
+.ocassiontext{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    
+}
+
+.ocassiontext h2{
+    font-size: 3vh;
+    margin-bottom: 10px;
+}
+
+.ocassiontext span{
+    font-size: 2.2vh;
+}
+
+ /* THIRD SECTION */
+
+ #LocalizationSection{
+    background-image: url(zdj2.jpg);
+    width: 100%;
+    height: 100%;   
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
