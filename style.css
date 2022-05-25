@@ -144,7 +144,7 @@ a:active .tab{
  /* FIRST SECTION */
  
 #homeSection{
-    background-image: url(firstphoto.jpg);
+    background-image: url(src/firstphoto.jpg);
     width: 100%;
     height: 100%;   
     background-size: 100% 100%;
@@ -199,7 +199,7 @@ a:active .tab{
  /* SECOND SECTION */
 
  #occasionsSection{
-    background-image: url(zdj3.jpg);
+    background-image: url(src/secondphoto.jpg);
     width: 100%;
     height: 100%;   
     background-size: 100% 100%;
@@ -209,17 +209,17 @@ a:active .tab{
 }
 
 .firstOccasion{
-    background-image: url(occasion1.jpg);
+    background-image: url(src/occasion1.jpg);
 
 }
 
 .secondOccasion{
-    background-image: url(occasion2.jpg); 
+    background-image: url(src/occasion2.jpg); 
 
 }
 
 .thirdOccasion{
-    background-image: url(occasion3.jpg);
+    background-image: url(src/occasion3.jpg);
 
 }
 .occasions{
@@ -264,7 +264,7 @@ a:active .tab{
  /* THIRD SECTION */
 
  #LocalizationSection{
-    background-image: url(zdj2.jpg);
+    background-image: url(src/thirdphoto.jpg);
     width: 100%;
     height: 100%;   
     background-size: 100% 100%;
