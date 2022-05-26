@@ -1,5 +1,5 @@
 @font-face {
-    src: url(SFKingstonRegular.otf);
+    src: url(src/SFKingstonRegular.otf);
     font-family: kingston;
 }
 
@@ -20,126 +20,122 @@ body{
 
 /* NAVBAR */
 
-header #logo, header li, header a, header button {
-    font-weight: 500;
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-    margin: auto;
-    padding: 10px 5px 10px 5px;
-}
 
-header{
-    display: flex;
-    align-items: center;
-    background-color:rgba(44, 42, 42, 0.412);
+
+nav{
     position: fixed;
     width: 100%;
-    z-index: 80;
-    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #110a0aa4;
+    color: #ffffff;
+    font-size: 1.5rem;
+    z-index: 100;
+    transition: 0.5s;
 }
 
-header:hover{
-    background-color:rgba(0, 0, 0, 0.834);
-    transform: scale(1.25);
-    z-index: 79;
+nav:hover {
+    transform: scale(120%); 
 }
 
-#logo {
-    cursor: pointer;
+.nav__links{
+    margin: auto;
 }
 
-.nav__links li:hover{
-
-    background-color:rgba(84, 88, 84, 0.288);
-    border-radius: 5px;
-    cursor: pointer;
-   
-}
-
-.nav__links a:active{
-
-    color: rgba(7, 225, 233, 0.863);
-    
+.nav__links ul{
+    margin: 0;
+    padding: 0;
+    display: flex; 
 }
 
 .nav__links li{
-    display: inline-block;
-
+    list-style: none;
 }
 
-
-/* #menu{
-    color: #ffffff;
-    padding: 10px;
-    width: 100%;
-    background-color:rgba(44, 42, 42, 0.412);
-    position: fixed;
-    transition: 0.5s;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
+.nav__links li:hover{
+    background-color: rgba(23, 175, 124, 0.74);
+    border-radius: 8px;
 }
 
-#logo{
-
-    min-width: 50px;
-    height: 25px;
-    font-size: 20px;
-    padding: 10px;
-    opacity: 0.9;
-}
-
-#menu:hover{
-    background-color:rgba(0, 0, 0, 0.834);
-    transform: scale(1.25);
-    z-index: 79;
-}
-
-#tabs{
-
-}
-.tab{
-    min-width: 50px;
-    height: 25px;
-    font-size: 20px;
-    padding: 10px;
-    opacity: 0.9;
-}
-
-.tab:hover{
-    background-color:rgba(84, 88, 84, 0.288);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 1s
-}
-
-a:link .tab, a:visited .tab{
-
-    color: white;
+.nav__links li a, .logo a{
     text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+}
+
+ .logo{
+    position: absolute;
+    left: 20%;
+}
+
+.checktermbtn a{
+    text-decoration: none;
+    color: #ffffff;
     display: inline-block;
-}
-a:active .tab{
-    color: aqua;
-    font-size: xx-large;
-    transition: 0.1s;
+    padding: 7px;
 }
 
+.checktermbtn{
+    position: absolute;
+    right: 20%;
+    font-size: 1rem;
+    border: 3px solid rgba(23, 175, 124, 0.74);
+    border-radius: 10px;
+    margin-right: 10px;
+}
 
-#checkterm{
-    min-width: 50px;
-    height: 25px;
-    font-size: 20px;
-    padding: 10px;
-    opacity: 0.9;
-    margin-right: auto;
+.checktermbtn:hover{
+    transition: 1s;
+    background-color: rgba(23, 175, 124, 0.74);
+}
 
 
-} */
+
+.toggle__button{
+
+    display: none;
+    flex-direction: column;
+    width: 40px;
+    height: 21px;
+}
+
+.toggle__button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding-top: 4px;
+    margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+    
+    .toggle__button{
+        display: flex;
+        position: absolute;
+        left: 16;
+        top: 16       
+    }
+    .nav__links{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .checktermbtn{
+        position: relative;
+        right: 0%;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;        
+      }
+      nav{
+        pointer-events: none;
+      }    
+}
+
 
  /* FIRST SECTION */
  
@@ -181,6 +177,13 @@ a:active .tab{
     color: #ffffff;
     margin-top: 200px;
     animation: up-and-down 1s ease-in infinite alternate;
+}
+
+#startarrow:hover{
+    border-radius: 24px;
+    transition: background-color 1s;
+    background-color: rgba(23, 175, 124, 0.74);
+    
 }
 
 @keyframes up-and-down{
