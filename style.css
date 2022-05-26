@@ -70,6 +70,19 @@ nav:hover {
     left: 20%;
 }
 
+.logo a{
+    color: rgba(23, 175, 124, 0.74);
+    font-family: kingston;
+    font-weight: 550;
+}
+
+.logo a:hover{
+
+    font-weight: 700;
+    
+    
+}
+
 .checktermbtn a{
     text-decoration: none;
     color: #ffffff;

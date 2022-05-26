@@ -5,14 +5,22 @@
 }
 body{
     background-color: gray;
-    justify-content: center;
+    color: #ffff;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
-.photoes__container{
-    background-color: antiquewhite;
-    width: 60%;
-    height: 80%;
+h1{
+    font-size: 96px;
+    text-align: center;
+}
 
-    
+.thumbnail{
+    max-height: 200px;
+    max-width: 300px;
+}
 
+.thumbnail img{
+    height: 100%;
+    width: 100%;
 }
