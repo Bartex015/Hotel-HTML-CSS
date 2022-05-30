@@ -4,23 +4,39 @@
     padding: 0;
 }
 body{
-    background-color: gray;
+    background-color: rgb(77, 69, 69);
     color: #ffff;
     min-height: 100vh;
     min-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1{
     font-size: 96px;
     text-align: center;
+    margin: 64px;
+}
+.gallery{
+    background-color: rgba(16, 74, 55, 0.195);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.thumbnail{
+    max-height: 300px;
+    max-width: 400px;
+    margin: 32px;
+    transition: 1s;   
 }
 
-.thumbnail{
-    max-height: 200px;
-    max-width: 300px;
+.thumbnail:hover{
+    transform: scale(130%);
 }
 
 .thumbnail img{
     height: 100%;
+    object-fit: cover;
     width: 100%;
 }
