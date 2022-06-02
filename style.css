@@ -156,25 +156,14 @@ nav:hover {
  
 #homeSection{
     background-image: url(src/firstphoto.jpg);
-    width: 100%;
-    height: 100%;   
-    background-size: 100% 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.midcontainer
-{
-    width: 70%;
-    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
 
 
  #title{
@@ -220,16 +209,17 @@ nav:hover {
 
  #occasionsSection{
     background-image: url(src/secondphoto.jpg);
-    width: 100%;
-    height: 100%;   
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+
 }
 
 .occasions__container{
-    flex-direction: row;
+    height: 80vh;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
 .firstOccasion{
@@ -247,8 +237,8 @@ nav:hover {
 
 }
 .occasions{
-    width: 30%;
-    height: 100%;
+    width: 20vw;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     margin: 0 10px;
@@ -265,7 +255,7 @@ nav:hover {
     z-index: 1; 
 }
 
-.ocassiontext{
+/* .ocassiontext{
 
     position: absolute;
     bottom: 0;
@@ -275,7 +265,7 @@ nav:hover {
     border-radius: 0px 0px 15px 15px;
     padding: 10px;
     
-}
+} */
 
 .ocassiontext h2{
     font-size: 3vh;
@@ -290,12 +280,10 @@ nav:hover {
 
  #LocalizationSection{
     background-image: url(src/thirdphoto.jpg);
-    width: 100%;
-    height: 100%;   
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
 }
 
 #localization__title{
@@ -313,95 +301,95 @@ nav:hover {
 
  /* FOOTER */
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
- #ContactSection{
-     line-height: 1.5;
-     font-family: 'Poppins', sans-serif;
- }
- 
- 
- #ContactSection{
- 
-     background-color: rgb(77, 69, 69);
- 
-     padding: 70px;
- }
- 
- #ContactSection ul{
-     list-style-type: none;
- }
- .footermidcontainer{
- 
-     max-width: 1170px;
-     margin:auto;
-     
- }
- 
- .footerrow{
-     display: flex;
-     flex-wrap: wrap;
- 
-     
- }
- 
- .footercolumn{
-     width: 30%;
-     padding: 0 15px;
- }
- 
- .footercolumn h4{
-     font-size: 18px;
-     color: #ffffff;
-     margin-bottom: 20px;
-     position: relative;
- }
- 
- .footercolumn h4::before{
-     content: '';
-     position: absolute;
-     bottom: -10px;
-     background-color: rgba(23, 175, 124, 0.74);
-     height: 2px;
-     width: 20%;
- }
- 
- .footercolumn li a{
-     
-     letter-spacing: 0.6;
-     line-height: 25px;
-     text-decoration: none;
-     list-style-type: none;
-     color: rgba(255, 255, 255, 0.71);
- }
- 
- .footercolumn .social-links a{
-     display: inline-block;
-     height: 40px;
-     width: 40px;
-     background-color: rgba(23, 175, 124, 0.74);
-     margin:0 10px 10px 0;
-     text-align: center;
-     line-height: 40px;
-     border-radius: 50%;
-     color: #ffffff;
-     transition: all 0.5s ease;
- }
- 
- .footercolumn .social-links a:hover{
-     background-color: #ffffff;
-     color: rgba(23, 175, 124, 0.74);
- }
- 
- 
- 
- @media(max-width: 767px){
-     .footercolumn{
-       width: 50%;
-       margin-bottom: 30px;
-   }
-   }
-   @media(max-width: 574px){
-     .footercolumn{
-       width: 100%;
-   }
-   }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+#ContactSection{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+#ContactSection{
+
+    background-color: rgb(77, 69, 69);
+
+    padding: 70px;
+}
+
+#ContactSection ul{
+    list-style-type: none;
+}
+.footermidcontainer{
+
+	max-width: 1170px;
+	margin:auto;
+    
+}
+
+.footerrow{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.footercolumn{
+    width: 30%;
+    padding: 0 15px;
+}
+
+.footercolumn h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footercolumn h4::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	background-color: rgba(23, 175, 124, 0.74);
+	height: 2px;
+	width: 20%;
+}
+
+.footercolumn li a{
+    
+    letter-spacing: 0.6;
+    line-height: 25px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.footercolumn .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(23, 175, 124, 0.74);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footercolumn .social-links a:hover{
+    background-color: #ffffff;
+    color: rgba(23, 175, 124, 0.74);
+}
+
+
+
+@media(max-width: 767px){
+    .footercolumn{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footercolumn{
+      width: 100%;
+  }
+  }
