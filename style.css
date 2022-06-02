@@ -16,6 +16,7 @@ html{
 
 body{
     font-family: sans-serif;
+    line-height: 1.3;
 }
 
 /* NAVBAR */
@@ -168,10 +169,12 @@ nav:hover {
     width: 70%;
     height: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
 
 
  #title{
@@ -223,6 +226,10 @@ nav:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.occasions__container{
+    flex-direction: row;
 }
 
 .firstOccasion{
@@ -296,7 +303,7 @@ nav:hover {
     font-size: 10vh;
     color: #ffffff;
     font-family: kingston;
-    margin: auto;
+
 }
 
 .googlemap{
@@ -306,41 +313,95 @@ nav:hover {
 
  /* FOOTER */
 
-#ContactSection{
-    width: 100%;
-    height: auto;
-    background-color: rgb(77, 69, 69);
-    color: #ffffff;
-}
-
-
-.lists{
-    font-size: 22px;
-    list-style-type: none;
-    
-}
-
-.lists li:first-child{
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-
-.footermidcontainer{
-    justify-content: center;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-}
-
-#left__column{
-    margin-right: 200px;
-}
-
-.footer__title{
-    font-size: 50px;
-    margin: 0px 0px 20px;
-    font-family: kingston;
-
-}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ #ContactSection{
+     line-height: 1.5;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ 
+ #ContactSection{
+ 
+     background-color: rgb(77, 69, 69);
+ 
+     padding: 70px;
+ }
+ 
+ #ContactSection ul{
+     list-style-type: none;
+ }
+ .footermidcontainer{
+ 
+     max-width: 1170px;
+     margin:auto;
+     
+ }
+ 
+ .footerrow{
+     display: flex;
+     flex-wrap: wrap;
+ 
+     
+ }
+ 
+ .footercolumn{
+     width: 30%;
+     padding: 0 15px;
+ }
+ 
+ .footercolumn h4{
+     font-size: 18px;
+     color: #ffffff;
+     margin-bottom: 20px;
+     position: relative;
+ }
+ 
+ .footercolumn h4::before{
+     content: '';
+     position: absolute;
+     bottom: -10px;
+     background-color: rgba(23, 175, 124, 0.74);
+     height: 2px;
+     width: 20%;
+ }
+ 
+ .footercolumn li a{
+     
+     letter-spacing: 0.6;
+     line-height: 25px;
+     text-decoration: none;
+     list-style-type: none;
+     color: rgba(255, 255, 255, 0.71);
+ }
+ 
+ .footercolumn .social-links a{
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     background-color: rgba(23, 175, 124, 0.74);
+     margin:0 10px 10px 0;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     color: #ffffff;
+     transition: all 0.5s ease;
+ }
+ 
+ .footercolumn .social-links a:hover{
+     background-color: #ffffff;
+     color: rgba(23, 175, 124, 0.74);
+ }
+ 
+ 
+ 
+ @media(max-width: 767px){
+     .footercolumn{
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   }
+   @media(max-width: 574px){
+     .footercolumn{
+       width: 100%;
+   }
+   }
