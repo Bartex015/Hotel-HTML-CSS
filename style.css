@@ -165,12 +165,14 @@ nav:hover {
     align-items: center;
 }
 
-
- #title{
+#title{
+    text-align: center;
     font-size: 10vh;
     color: #ffffff;
     font-family: kingston;
-} 
+}
+
+
 
 
 #startbutton{
@@ -210,15 +212,21 @@ nav:hover {
  #occasionsSection{
     background-image: url(src/secondphoto.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     background-position: center;
+    color: #ffff;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
 .occasions__container{
-    height: 80vh;
-    width: 100vw;
+
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -237,11 +245,11 @@ nav:hover {
 
 }
 .occasions{
-    width: 20vw;
-    height: 50vh;
+    width: 350px;
+    height: 500px;
     background-size: cover;
     background-position: center;
-    margin: 0 10px;
+    margin: 10px 10px;
     transition: 1s;
     border-radius: 15px;
     box-shadow: 0px 0px 5px grey;
@@ -255,7 +263,7 @@ nav:hover {
     z-index: 1; 
 }
 
-/* .ocassiontext{
+.ocassiontext{
 
     position: absolute;
     bottom: 0;
@@ -265,7 +273,7 @@ nav:hover {
     border-radius: 0px 0px 15px 15px;
     padding: 10px;
     
-} */
+}
 
 .ocassiontext h2{
     font-size: 3vh;
@@ -328,8 +336,6 @@ nav:hover {
 .footerrow{
     display: flex;
     flex-wrap: wrap;
-
-    
 }
 
 .footercolumn{
