@@ -155,11 +155,8 @@ nav:hover {
  /* FIRST SECTION */
  
 #homeSection{
-    background-image: url(src/firstphoto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: center / cover no-repeat url(src/firstphoto.jpg);
     height: 100vh;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,8 +168,6 @@ nav:hover {
     color: #ffffff;
     font-family: kingston;
 }
-
-
 
 
 #startbutton{
@@ -210,9 +205,7 @@ nav:hover {
  /* SECOND SECTION */
 
  #occasionsSection{
-    background-image: url(src/secondphoto.jpg);
-    background-size: cover;
-    background-position: center;
+    background: center / cover no-repeat url(src/secondphoto.jpg);
     color: #ffff;
     min-height: 100vh;
     min-width: 100vw;
@@ -287,11 +280,14 @@ nav:hover {
  /* THIRD SECTION */
 
  #LocalizationSection{
-    background-image: url(src/thirdphoto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: center / cover no-repeat url(src/thirdphoto.jpg);
     height: 100vh;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #localization__title{
@@ -303,8 +299,14 @@ nav:hover {
 }
 
 .googlemap{
+    
+    width: 100%
+}
+
+.map-wrapper{
+    max-width: 900px;
+    border: 2px solid black;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    margin-top: 10%;
 }
 
  /* FOOTER */
@@ -317,9 +319,7 @@ nav:hover {
 
 
 #ContactSection{
-
     background-color: rgb(77, 69, 69);
-
     padding: 70px;
 }
 
