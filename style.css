@@ -35,8 +35,11 @@ nav{
     align-items: center;
 }
 
-nav:hover {
-    transform: scale(120%); 
+
+@media (min-width: 1000px) {
+    nav:hover {
+        transform: scale(120%); 
+    }
 }
 
 .nav__links{
@@ -141,12 +144,22 @@ nav:hover {
     nav{
         flex-direction: column;
     }
+    .nav__links{
+        display: none;
+    }
+    
+    .nav__links.active{
+        display: flex;
+    }
+
     .nav__links ul{
         flex-direction: column;
         text-align: center;
+    }
+    .nav__links ul li:focus{
+        outline: none;
 
     }
-
     .logo{
         display: none;
     }
@@ -158,7 +171,7 @@ nav:hover {
         margin-bottom: 10px;
         order: -1;        
       }
-  
+       
 }
 
 
@@ -297,11 +310,18 @@ nav:hover {
     font-size: 2.2vh;
 }
 
-@media(min-width: 800px){
+@media(min-width: 1000px){
     .occasions{
         width: 350px;
         height: 550px;
   }
+  
+}
+
+@media (max-width: 1000px) {
+    .occasions{
+        
+    }
 }
 
  /* THIRD SECTION */
