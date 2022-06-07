@@ -28,7 +28,6 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #110a0aa4;
     color: #ffffff;
     font-size: 1.5rem;
@@ -105,7 +104,15 @@ nav:hover {
     background-color: rgba(23, 175, 124, 0.74);
 }
 
+.section__title{
+    padding: 20px;
+    font-size: 64px;
+    font-family: kingston;
+    text-align: center;
+    color: #ffffff;
+}
 
+ /* NAVBAR PHONES */
 
 .toggle__button{
 
@@ -125,7 +132,7 @@ nav:hover {
     margin-top: 4px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     
     .toggle__button{
         display: flex;
@@ -180,6 +187,13 @@ nav:hover {
     color: #ffffff;
     margin-top: 200px;
     animation: up-and-down 1s ease-in infinite alternate;
+    
+}
+
+#startbutton a:focus{
+
+    outline: none;
+
 }
 
 #startarrow:hover{
@@ -205,14 +219,14 @@ nav:hover {
  /* SECOND SECTION */
 
  #occasionsSection{
-    background: center / cover no-repeat url(src/secondphoto.jpg);
+    background: center / cover no-repeat #232323;
     color: #ffff;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 
 }
 
@@ -252,7 +266,7 @@ nav:hover {
 }
 
 .occasions:hover{
-    transform: scale(1.25);
+    transform: scale(1.2);
     z-index: 1; 
 }
 
@@ -277,37 +291,58 @@ nav:hover {
     font-size: 2.2vh;
 }
 
+@media(min-width: 800px){
+    .occasions{
+        width: 350px;
+        height: 550px;
+  }
+}
+
  /* THIRD SECTION */
 
  #LocalizationSection{
-    background: center / cover no-repeat url(src/thirdphoto.jpg);
-    height: 100vh;
-    background-position: center;
+    background: center / cover no-repeat rgb(18, 18, 22);
+    color: #ffff;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
-#localization__title{
-    
-    font-size: 10vh;
-    color: #ffffff;
-    font-family: kingston;
-
-}
-
-.googlemap{
-    
-    width: 100%
-}
 
 .map-wrapper{
-    max-width: 900px;
-    border: 2px solid black;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
 }
+iframe{
+
+    width: 90vw;
+    height: calc(.75 * 90vw);
+    max-width: 900px;
+    max-height: 600px;
+    border: solid 2px gray;
+    box-shadow: 2px 2px 2px silver;
+    border-radius: 4px;
+
+}
+
+
+
+
+ /* .map-wrapper::after{
+    content: "You can find us here!";
+    width: 500px;
+    font-size: 10vh;
+    color: #ffffffde;
+    font-family: kingston;
+    position: absolute;
+    top: 150px;
+    right: -400px;
+    z-index: 5;
+
+}   */
+
 
  /* FOOTER */
 
@@ -393,9 +428,9 @@ nav:hover {
       width: 50%;
       margin-bottom: 30px;
   }
-  }
+}
   @media(max-width: 574px){
     .footercolumn{
       width: 100%;
   }
-  }
+}
