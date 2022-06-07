@@ -27,12 +27,12 @@ nav{
     position: fixed;
     width: 100%;
     display: flex;
-    align-items: center;
     background-color: #110a0aa4;
     color: #ffffff;
     font-size: 1.5rem;
     z-index: 100;
     transition: 0.5s;
+    align-items: center;
 }
 
 nav:hover {
@@ -63,6 +63,7 @@ nav:hover {
     color: #ffffff;
     padding: 1rem;
     display: block;
+    
 }
 
  .logo{
@@ -79,8 +80,6 @@ nav:hover {
 .logo a:hover{
 
     font-weight: 700;
-    
-    
 }
 
 .checktermbtn a{
@@ -114,14 +113,7 @@ nav:hover {
 
  /* NAVBAR PHONES */
 
-.toggle__button{
 
-    display: none;
-    flex-direction: column;
-    
-    width: 40px;
-    height: 21px;
-}
 
 .toggle__button .bar {
     height: 3px;
@@ -132,17 +124,29 @@ nav:hover {
     margin-top: 4px;
 }
 
+
+
 @media (max-width: 1000px) {
     
     .toggle__button{
-        display: flex;
         position: absolute;
-        left: 16;
-        top: 16       
+        flex-direction: column;
+        width: 40px;
+        height: 21px;
+        display: flex;
+        margin: 16px;
+        align-self: flex-start;
+
     }
-    .nav__links{
-        display: none;
+    nav{
+        flex-direction: column;
     }
+    .nav__links ul{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
     .logo{
         display: none;
     }
@@ -151,11 +155,10 @@ nav:hover {
         right: 0%;
         margin-left: auto;
         margin-top: 10px;
-        margin-bottom: 10px;        
+        margin-bottom: 10px;
+        order: -1;        
       }
-      nav{
-        pointer-events: none;
-      }    
+  
 }
 
 
@@ -167,6 +170,7 @@ nav:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #title{
@@ -180,13 +184,13 @@ nav:hover {
 #startbutton{
     display: flex;
     justify-content: center;
+    margin-top: 300px;
 
 }
 
 #startarrow{
     color: #ffffff;
-    margin-top: 200px;
-    animation: up-and-down 1s ease-in infinite alternate;
+    animation: up-and-down 1s ease-out infinite alternate;
     
 }
 
@@ -211,10 +215,12 @@ nav:hover {
     
 }
 
+
 #startarrow:hover{   
 
     cursor: pointer;    
 }
+
 
  /* SECOND SECTION */
 
@@ -301,7 +307,7 @@ nav:hover {
  /* THIRD SECTION */
 
  #LocalizationSection{
-    background: center / cover no-repeat rgb(18, 18, 22);
+    background: center / cover no-repeat rgb(36, 36, 43);
     color: #ffff;
     min-height: 100vh;
     min-width: 100vw;
@@ -312,9 +318,7 @@ nav:hover {
 }
 
 
-.map-wrapper{
 
-}
 iframe{
 
     width: 90vw;
